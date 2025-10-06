@@ -13,7 +13,7 @@ EXPOSE 8000
 
 #COPY --from=datadog/serverless-init:1 /datadog-init /app/datadog-init
 #
-#COPY . .
+COPY . .
 #
 #ARG DD_SERVICE
 #ENV DD_SITE=datadoghq.com \

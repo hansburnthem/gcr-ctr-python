@@ -5,10 +5,10 @@ from fastapi import FastAPI
 import datadog
 # import logging
 
-datadog.initialize(
-    statsd_host="127.0.0.1",
-    statsd_port=8125,
-)
+# datadog.initialize(
+#     statsd_host="127.0.0.1",
+#     statsd_port=8125,
+# )
 app = FastAPI()
 
 # LOG_FILE = os.environ.get(

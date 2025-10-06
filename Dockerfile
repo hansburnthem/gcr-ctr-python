@@ -23,4 +23,4 @@ COPY . .
 #  PYTHONUNBUFFERED=1
 #
 #ENTRYPOINT ["/app/datadog-init"]
-CMD ddtrace-run gunicorn app:app -w 4 -k uvicorn.workers.UvicornWorker --bind 0.0.0.0:8000
+CMD ddtrace-run gunicorn app:app --bind 0.0.0.0:8000
